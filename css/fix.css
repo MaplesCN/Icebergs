@@ -133,15 +133,19 @@ article .post-thumbnail img {
 }
 
 .sticky-post {
-    background: var(--theme);
+    background: var(--main);
     position: static;
     border-radius: 3px
 }
 
 .sticky-tag {
-    background: var(--theme);
+    background: var(--main);
     border-radius: 3px;
     padding: 0 .15rem
+}
+
+.site-featured-image .sticky-tag {
+    color: var(--theme)
 }
 
 .widget_block ul li {

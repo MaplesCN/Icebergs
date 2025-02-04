@@ -38,8 +38,9 @@ input[type="submit"] {
     background-color: var(--theme)
 }
 
+.sticky-post,
 .sticky-tag {
-    color: var(--main)
+    color: var(--theme)
 }
 
 .widget_block ul li {
