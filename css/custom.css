@@ -1,0 +1,8 @@
+/* Custom */
+.corner {
+    border-radius: 8px
+}
+
+.edge>div {
+    padding: .5rem
+}

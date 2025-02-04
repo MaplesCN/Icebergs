@@ -1,0 +1,85 @@
+/* Icon Fonts */
+.icebergs,
+.oneword,
+.smartisan,
+.smartisanlogo,
+.pexels,
+.snapwiresnaps,
+.fancycrave,
+.texture,
+.fa,
+.fa-brands,
+.fa-classic,
+.fa-regular,
+.fa-sharp,
+.fa-solid,
+.fab,
+.far,
+.fas {
+    padding: 0 .15rem
+}
+
+@font-face {
+    font-family: "Icebergs";
+    src: url("https://res.1word.cn/fonts/icebergs.woff2")
+}
+
+.icebergs,
+.oneword,
+.smartisan,
+.smartisanlogo,
+.pexels,
+.snapwiresnaps,
+.fancycrave,
+.texture {
+    font-family: "Icebergs";
+    display: inline-block;
+    font-style: normal;
+    line-height: 1;
+    position: relative
+}
+
+.icebergs::before {
+    content: "\f0a1";
+    position: absolute
+}
+
+.icebergs::after {
+    content: "\f0a2";
+    opacity: .5
+}
+
+.oneword::before {
+    content: "\f0a0"
+}
+
+.smartisan::before {
+    content: "\f0a5"
+}
+
+.smartisanlogo::after {
+    content: "\f0a7";
+    color: #d70010 !important
+}
+
+.smartisanlogo::before {
+    content: "\f0a6";
+    color: #FFF !important;
+    position: absolute
+}
+
+.pexels::before {
+    content: "\f0a8"
+}
+
+.snapwiresnaps::before {
+    content: "\f0a9"
+}
+
+.fancycrave::before {
+    content: "\f0aa"
+}
+
+.texture::before {
+    content: "\f0ab"
+}
