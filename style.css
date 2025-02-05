@@ -10,17 +10,18 @@ Version: 1.6
 
 /* Chinese Font */
 @font-face {
-    font-family: "HANYI_Pixel_11px_U";
-    src: local("HYPixel 11px U"), url("https://res.1word.cn/fonts/HANYI_Pixel_11px_U/HANYI_Pixel_11px_U.woff2")
+    font-family: "Fusion_Pixel_Font";
+    src: local("Fusion Pixel 12px Proportional zh_hans Regular"), url("https://res.1word.cn/fonts/Fusion_Pixel_Font/fusion-pixel-12px-proportional-zh_hans.woff2")
 }
 
 /* Fix the 2019 theme */
 body {
-    --themefont: "HANYI_Pixel_11px_U";
+    --themefont: "Fusion_Pixel_Font";
     --theme: #18528E;
     --themelight: #ace;
     --main: #FFF;
     --blur: #FFFFFF1F;
+    background-color: var(--theme);
     color: var(--main)
 }
 
@@ -32,10 +33,6 @@ input[type="reset"],
 input[type="submit"] {
     background-color: var(--main);
     color: var(--theme)
-}
-
-#content {
-    background-color: var(--theme)
 }
 
 .sticky-post,
@@ -87,6 +84,11 @@ a:active,
 .site-header.featured-image .site-title a,
 .site-header.featured-image .site-featured-image a {
     color: var(--main)
+}
+
+.entry .entry-content .wp-block-separator,
+.entry .entry-content hr {
+    background-color: var(--main)
 }
 
 .entry .entry-meta,
@@ -151,7 +153,7 @@ article .post-thumbnail img,
 }
 
 /* Dark Mode support */
-.toggler #content {
+.toggler body {
     transition: color .3s, background-color .3s
 }
 
