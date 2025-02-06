@@ -177,5 +177,19 @@ article .post-thumbnail img,
     }
 }
 
+/* Typed */
+@keyframes blink {
+    to {
+        opacity: 1
+    }
+}
+
+.typed-text::after {
+    content: "|";
+    display: inline-block;
+    opacity: 0;
+    animation: blink .7s infinite alternate
+}
+
 @import url("/wp-content/themes/Icebergs/css/icon-fonts.css");
 @import url("/wp-content/themes/Icebergs/css/custom.css");

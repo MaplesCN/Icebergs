@@ -2,4 +2,6 @@
 <a href="#top" style="float:right" title="顶部"><i class="fa-solid fa-caret-up"></i></a><li style="float:right"><a href="<?php echo home_url(); ?>" style="float:right" title="首页"><i class="fa-solid fa-igloo"></i></a></li><li style="float:right"><a id='dark-toggler' title="深/浅色"></a></li>
 <div style="margin-top:2rem" align="center"><div style="font-size:.8rem;font-weight:1000;color:var(--main);user-select:none"><i class="oneword" style="font-size:1.2rem;font-weight:normal;vertical-align:middle"></i>·独白</div>
 <a href="/copyrights" target="_blank">&copy<?php echo date('Y');?></a><br><?php echo '第',round((strtotime(date("Y-m-d"))-strtotime("2018-02-01"))/3600/24),'天';?></div>
-</div></footer></div></div></div><?php wp_footer(); ?></body></html>
+</div></footer></div></div></div>
+<script>const typedTextContainer=document.querySelector('.typed-text');function typeWriter(container){text=container.innerText;container.innerText='';let i=0;function type(){if(i<text.length){container.innerHTML+=text.charAt(i);i++;setTimeout(type,Math.random()*200+50)}}type()}typeWriter(typedTextContainer);</script>
+<?php wp_footer(); ?></body></html>
