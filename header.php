@@ -34,12 +34,33 @@
 		.site-header.featured-image .site-featured-image .entry-header .entry-title::before{display:none}
 		.site-header.featured-image::after,.site-header.featured-image .site-featured-image::after{background:unset}
 		@media only screen and (min-width:768px){#content>*{scroll-snap-align:start}#footer{scroll-snap-align:end}#content{scroll-snap-type:y mandatory;overflow:auto;height:100vh;min-height:100vh}}
+		@keyframes blink{to{opacity:1}}.typed-text::after{content: "|";display: inline-block;opacity: 0;animation: blink .7s infinite alternate}
 		</style>
 		<header id="top" class="site-header featured-image">
 		<div class="site-featured-image">
 			<figure class="post-thumbnail">
 				<img width="1568" height="882" id="home" src="https://res.1word.cn/icebergs/icebergs-pixelated.svg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" sizes="(max-width: 1568px) 100vw, 1568px" style="user-select:none"/></figure>
-			<div class="entry-header"><h1 class="entry-title" style="text-align:center"><a href="#primary"><sup><i class="fa-solid fa-hashtag"></i></sup>ONEWORD</a></h1></div>
+			<div class="entry-header"><h1 class="entry-title" style="text-align:center"><sup><i class="fa-solid fa-hashtag"></i></sup><a class="typed-text" href="#primary">ONEWORD</a></h1></div>
+		<script>
+		// 获取容器
+		const typedTextContainer = document.querySelector('.typed-text');
+
+		// 打字机效果的实现
+		function typeWriter(container) {
+			text = container.innerText;
+			container.innerText = '';
+			let i = 0;
+			function type() {
+			if (i < text.length) {
+				container.innerHTML += text.charAt(i);
+				i++;
+				setTimeout(type, Math.random() * 200 + 50);
+			}
+			}
+			type();
+		}
+		typeWriter(typedTextContainer);
+ 	   </script>
 		</div>
 		</header>
 		<?php endif; ?>
