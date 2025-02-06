@@ -42,10 +42,7 @@
 				<img width="1568" height="882" id="home" src="https://res.1word.cn/icebergs/icebergs-pixelated.svg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" sizes="(max-width: 1568px) 100vw, 1568px" style="user-select:none"/></figure>
 			<div class="entry-header"><h1 class="entry-title" style="text-align:center"><sup><i class="fa-solid fa-hashtag"></i></sup><a class="typed-text" href="#primary">ONEWORD</a></h1></div>
 		<script>
-		// 获取容器
 		const typedTextContainer = document.querySelector('.typed-text');
-
-		// 打字机效果的实现
 		function typeWriter(container) {
 			text = container.innerText;
 			container.innerText = '';
@@ -60,7 +57,7 @@
 			type();
 		}
 		typeWriter(typedTextContainer);
- 	   </script>
+		</script>
 		</div>
 		</header>
 		<?php endif; ?>
