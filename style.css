@@ -108,7 +108,8 @@ a:active,
 .search .page-header .page-title,
 .error404 .page-header .page-title,
 .comment-form .comment-notes,
-.comment-form label {
+.comment-form label,
+a.post-page-numbers {
     color: var(--themelight)
 }
 
@@ -188,7 +189,7 @@ article .post-thumbnail img,
     content: "|";
     display: inline-block;
     opacity: 0;
-    animation: blink .7s infinite alternate
+    animation: blink .5s infinite alternate
 }
 
 @import url("/wp-content/themes/Icebergs/css/icon-fonts.css");

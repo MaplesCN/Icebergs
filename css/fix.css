@@ -101,6 +101,10 @@ article .post-thumbnail img {
     display: none
 }
 
+del {
+    opacity: 0.4
+}
+
 .entry .entry-content .wp-block-columns .wp-block-column:not(:first-child) {
     margin-left: 0px;
 }
