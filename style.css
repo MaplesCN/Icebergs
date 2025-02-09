@@ -109,7 +109,9 @@ a:active,
 .error404 .page-header .page-title,
 .comment-form .comment-notes,
 .comment-form label,
-a.post-page-numbers {
+a.page-numbers,
+a.post-page-numbers,
+.page-numbers.dots {
     color: var(--themelight)
 }
 
