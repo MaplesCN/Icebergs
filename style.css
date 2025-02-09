@@ -167,6 +167,10 @@ article .post-thumbnail img,
     filter: brightness(60%) grayscale(75%);
 }
 
+.dark-mode .scrim {
+    background-color: #000 !important
+}
+
 @media(prefers-color-scheme:dark) {
     .auto body {
         --theme: #252E37;
@@ -175,6 +179,10 @@ article .post-thumbnail img,
 
     .auto #home {
         filter: brightness(60%) grayscale(75%);
+    }
+
+    .auto .scrim {
+        background-color: #000 !important
     }
 }
 
