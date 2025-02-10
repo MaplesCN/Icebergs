@@ -33,7 +33,6 @@
 		<style>
 		.site-header.featured-image .site-featured-image .entry-header .entry-title::before{display:none}
 		.site-header.featured-image::after,.site-header.featured-image .site-featured-image::after{background:unset}
-		@media only screen and (min-width:768px){#content>*{scroll-snap-align:start}#footer{scroll-snap-align:end}#content{scroll-snap-type:y mandatory;overflow:auto;height:100vh;min-height:100vh}}
 		</style>
 		<header id="top" class="site-header featured-image">
 		<div class="site-featured-image">
